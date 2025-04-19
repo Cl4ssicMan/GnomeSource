@@ -1,0 +1,29 @@
+{
+  "web": {
+    "development": true,
+    "address": "31.59.98.19",
+    "port": 3000,
+    "ports": [17091],
+    "loginUrl": "gnomeloginserver.com:8080",
+    "maintenance": {
+      "enable": false,
+      "message": "Maintenance Woi"
+    },
+    "tls": {
+      "key": "./assets/ssl/server.key",
+      "cert": "./assets/ssl/server.crt"
+    },
+    "cdnUrl": "growserver-cache.netlify.app"
+  },
+  "webFrontend": {
+    "root": "./.cache/website",
+    "port": 8080,
+    "tls": {
+      "key": "/etc/letsencrypt/live/gnomeloginserver.com/privkey.pem",
+      "cert": "/etc/letsencrypt/live/gnomeloginserver.com/fullchain.pem"
+    }
+  },
+  "server": {
+    "bypassVersionCheck": true
+  }
+}
