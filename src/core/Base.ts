@@ -70,7 +70,7 @@ export class Base {
   public async start() {
     try {
       consola.box(
-        `Gnome Source\nVersion: ${this.package.version}\nGnome (gnomeman1234) 2025-${new Date().getFullYear()}`
+        `Gnome Source\nVersion: ${this.package.version}\nCreated By: Gnome (gnomeman1234) 2025-${new Date().getFullYear()}`
       );
 
       // Check if port is available
