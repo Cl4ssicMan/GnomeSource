@@ -144,7 +144,7 @@ export async function setupMkcert() {
   consola.info("Setup mkcert certificate");
   try {
     execSync(
-      `${mkcertExecuteable} -install && cd ${join(__dirname, ".cache", "ssl")} && ${mkcertExecuteable} *.growserver.app`,
+      `${mkcertExecuteable} -install ${join(__dirname, ".cache", "ssl")} && ${mkcertExecuteable} *.growserver.app`,
       { stdio: "inherit" }
     );
   } catch (e) {
